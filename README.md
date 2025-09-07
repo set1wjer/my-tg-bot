@@ -5,10 +5,11 @@ My first project on GitHub, just example Telegram Bot with some functions, the m
 ## Requirements
 - C++ compiler (g++, clang, MSVC)
 - CMake >= 3.10
-- Libraries:
-  - Boost (for X functionality)
-  - OpenSSL (for TLS/HTTPS)
-  - cURL (for HTTP requests)
+- [TgBot-cpp](https://github.com/reo7sp/tgbot-cpp)
+- Boost
+- OpenSSL
+- cURL
+- SQLite
 
 
 ## Build
