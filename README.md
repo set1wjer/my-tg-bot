@@ -15,11 +15,11 @@ My first project on GitHub, just example Telegram Bot with some functions, the m
 ### Visual Studio 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/set1wjer/myTgBot.git
+   git clone https://github.com/set1wjer/my-tg-bot.git 
    ```
 2. Open Visual Studio.
 3. Open project or solution.
-4. Find myTgBot/CMakeLists.txt and open it.
+4. Find my-tg-bot/CMakeLists.txt and open it.
 5. Replace bot token in `CMakeLists.json`
    ```cmake
    "TG_BOT_TOKEN": "YOUR TG BOT TOKEN"
@@ -28,8 +28,8 @@ My first project on GitHub, just example Telegram Bot with some functions, the m
 ### Another
 1. Clone the repository:
    ```bash
-   git clone https://github.com/set1wjer/myTgBot.git
-   cd myTgBot
+   git clone https://github.com/set1wjer/my-tg-bot.git
+   cd my-tg-bot
    ```
 2. Open `CMakeLists.json`
    Find the 15 line:
