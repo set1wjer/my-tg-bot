@@ -52,7 +52,7 @@ int main() {
     bot.getEvents().onAnyMessage([&bot](TgBot::Message::Ptr message) {
         std::cout << "User wrote: " << message->text << std::endl;
         if (StringTools::startsWith(message->text, "/")) {
-            return; // пропускаем команды
+            return; // skip commands
         }
         bot.getApi().sendMessage(message->chat->id, "Your message is: " + message->text);
         });
@@ -84,10 +84,10 @@ int main() {
 
         });
 
-    // on message "throw kybik"
+    // on message "throw cube"
     bot.getEvents().onNonCommandMessage([&bot](TgBot::Message::Ptr message) {
         std::cout << "User wrote: " << message->text << std::endl;
-        if (message->text == "Кинуть кубик") {
+        if (message->text == "throw cube") {
             bot.getApi().sendDice(message->chat->id);
             
 
@@ -135,7 +135,7 @@ int main() {
         button1->text = "Games";
 
         auto button2 = std::make_shared<TgBot::KeyboardButton>();
-        button2->text = "Опция 2";
+        button2->text = "option 2";
 
         keyboard->keyboard.push_back({ button1, button2 });
         keyboard->resizeKeyboard = true;
@@ -213,3 +213,4 @@ int main() {
 
     return 0;
     }
+
